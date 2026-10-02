@@ -1,3 +1,12 @@
+
+# Code Generator and Explanation AI Assistant
+
+# This program uses LangChain Expression Language (LCEL) to:
+# 1. Generate code based on a user-provided topic.
+# 2. Explain the generated code in simple words.
+# 3. Use RunnableParallel and RunnablePassthrough to return
+#    both the generated code and its explanation.
+
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
