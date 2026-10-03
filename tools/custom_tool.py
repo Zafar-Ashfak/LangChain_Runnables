@@ -1,7 +1,7 @@
 from langchain.tools import tool
 
 @tool
-def is_eligible(name: str, age: int):
+def is_eligible(name: str, age: int) -> str:
     """Create a greeting tool for a user"""
     if age < 18:
         return f"Hello, {name}.\nSorry, you are not eligible to vote."
